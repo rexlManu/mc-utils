@@ -143,6 +143,13 @@ const utils: Util[] = [
     shortDescription: "Center text for Minecraft",
     seoDescription: "Center text for use in Minecraft books, signs and chat.",
   },
+  {
+    path: "legacy-to-minimessage-converter",
+    name: "Legacy to MiniMessage Converter",
+    description: "Convert legacy color codes to MiniMessage.",
+    shortDescription: "Convert legacy to MiniMessage",
+    seoDescription: "Convert legacy color codes to MiniMessage format.",
+  },
 ];
 
 type Util = {
