@@ -185,20 +185,20 @@ const colors = [
 </script>
 
 <table class="w-[90%] lg:w-[60%] text-white">
-    <tr class="bg-[#1d1f24]">
-        <th class="rounded-tl-lg rounded-bl-lg p-2 pl-6 font-medium text-[20px] text-left">Effect</th>
-        <th class="rounded-tr-lg rounded-br-lg font-medium text-[20px] text-left">Name</th>
-        <th class="rounded-tr-lg rounded-br-lg font-medium text-[20px] text-left">Chat Code</th>
-        <th class="rounded-tr-lg rounded-br-lg font-medium text-[20px] text-left">MiniMessage Tag</th>
-        <th class="rounded-tr-lg rounded-br-lg font-medium text-[20px] text-left">MOTD</th>
-        <th class="rounded-tr-lg rounded-br-lg font-medium text-[20px] text-left">Hex</th>
+    <tr class="text-[#9d9d9e] font-medium">
+        <td class="p-2 pr-4 border-b-[1.5px] border-b-[#232324]">Effect</td>
+        <td class="pr-4 border-b-[1.5px] border-b-[#232324]">Name</td>
+        <td class="text-left pr-4 border-b-[1.5px] border-b-[#232324]">Chat Code</td>
+        <td class="text-left pr-4 w-[24%] border-b-[1.5px] border-b-[#232324]">MiniMessage Tag</td>
+        <td class="text-left pr-3 w-[15%] border-b-[1.5px] border-b-[#232324]">MOTD</td>
+        <td class="text-left pr-3 w-[15%] border-b-[1.5px] border-b-[#232324]">Hex</td>
     </tr>
     {#each colors as color}
         <tr class="">
-            <td class="pl-6 p-1.5 border-b-2 border-b-[#1D1F24] text-gray-400">
+            <td class="p-1.5 pr-5 border-b-2 border-b-[#1D1F24] text-gray-400">
                 <div class="bg-[{color.hex}] rounded-md w-[90px] h-[25px]"></div>
             </td>
-            <td class="border-b-2 border-b-[#1D1F24] text-gray-400">{color.name}</td>
+            <td class="border-b-2 border-b-[#1D1F24] text-gray-400 pr-2">{color.name}</td>
             <td class="border-b-2 border-b-[#1D1F24] text-gray-400">{color.code}</td>
             <td class="border-b-2 border-b-[#1D1F24] text-gray-400">{color.tag}</td>
             <td class="border-b-2 border-b-[#1D1F24] text-gray-400">{color.motd}</td>
@@ -208,7 +208,7 @@ const colors = [
 
     {#each formats as format}
         <tr class="">
-            <td class="border-b-2 border-b-[#1D1F24] text-gray-400 pl-6 p-1.5">
+            <td class="border-b-2 border-b-[#1D1F24] text-gray-400 p-1.5">
                 {#if format.name === "Magic"}
                     {@html obfuscated}
                 {:else}
